@@ -10,7 +10,28 @@ var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", 
 
 // Generate a password 
 function generatePassword() {
+  var passwordLength;
+  var specialCharacters;
+  var uppercaseLetters;
+  var lowercaseLetters;
+  var numbers; 
 
+ // If passwordLength >= 8 and passwordLength is <= 128;
+ //day one activ. 10
+ if (passwordLength >= 8 && passwordLength <= 128) {
+
+  // Prompt user for if they want a special characters and store it in a variable 
+  specialCharacters = window.confirm( "Do you want special characters?\n(Ok-Yes, Cancel-No)" );
+
+
+
+  // Prompt user for if they want a numbers and store it in a variable 
+
+  // Prompt user for if they want a lowercase and store it in a variable 
+
+  // Prompt user for if they want a uppercase and store it in a variable 
+
+ }
 }
 
 
