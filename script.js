@@ -23,14 +23,22 @@ function generatePassword() {
   // Prompt user for if they want a special characters and store it in a variable 
   specialCharacters = window.confirm( "Do you want special characters?\n(Ok-Yes, Cancel-No)" );
 
-
-
   // Prompt user for if they want a numbers and store it in a variable 
+  numbers = window.confirm( "Do you want numbers?\n(Ok-Yes, Cancel-No)" );
 
   // Prompt user for if they want a lowercase and store it in a variable 
+  lowercaseLetters = window.confirm( "Do you want lowercase letters?\n(Ok-Yes, Cancel-No)" );
 
   // Prompt user for if they want a uppercase and store it in a variable 
+  uppercaseLetters = window.confirm( "Do you want uppercase letters?\n(Ok-Yes, Cancel-No)" );
 
+
+  //Randomly select characters 
+
+// validate that at least one character choice is true
+if (passwordLength || specialCharacters || uppercaseLetters || lowercaseLetters || numbers ){
+
+}
  }
 }
 
