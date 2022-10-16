@@ -36,9 +36,22 @@ function generatePassword() {
   //Randomly select characters 
 
 // validate that at least one character choice is true
-if (passwordLength || specialCharacters || uppercaseLetters || lowercaseLetters || numbers ){
-
+if (!passwordLength && !specialCharacters && !uppercaseLetters && !lowercaseLetters && !numbers ){
+  //Alert the user they need to try again.
+  return "Please select Yes to at least one of the requirements\n(Ok-Yes)";
 }
+
+//Declare a new empty array to store the characters we went to use.
+
+var charactersArray = [];
+
+
+
+charactersArray = charactersArray.concat(thing);
+
+// IF specialCharacters is true 
+  // concat
+
  }
 }
 
