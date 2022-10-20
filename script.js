@@ -46,11 +46,24 @@ if (!passwordLength && !specialCharacters && !uppercaseLetters && !lowercaseLett
 var charactersArray = [];
 
 
-
-charactersArray = charactersArray.concat(thing);
-
 // IF specialCharacters is true 
   // concat
+if (specialCharacters) {
+  charactersArray = charactersArray.concat(specialCharacters);
+}
+
+if (uppercaseLetters) {
+  charactersArray = charactersArray.concat(uppercaseLetters);
+}
+
+if (lowercaseLetters) {
+  charactersArray = charactersArray.concat(lowercaseLetters);
+  
+}
+
+if (numbers) {
+  charactersArray = charactersArray.concat(numbers)
+}
 
  }
 }
