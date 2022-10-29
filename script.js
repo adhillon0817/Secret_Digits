@@ -2,8 +2,8 @@
 
 // Storing all needed characters in variables.
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var uppercaseCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+var lowercaseCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "=", "+", "{", "}", "|", "[", "]"]
 
 // What sorts of actions does my code need to complete? 
@@ -11,32 +11,32 @@ var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", 
 // Generate a password 
 function generatePassword() {
   var passwordLength;
-  var specialCharacters;
-  var uppercaseLetters;
-  var lowercaseLetters;
-  var numbers; 
-
+  var special;
+  var uppercase;
+  var lowercase;
+  var number; 
+passwordLength=window.prompt("How long would you like your password to be?")
  // If passwordLength >= 8 and passwordLength is <= 128;
  //day one activ. 10
  if (passwordLength >= 8 && passwordLength <= 128) {
 
   // Prompt user for if they want a special characters and store it in a variable 
-  specialCharacters = window.confirm( "Do you want special characters?\n(Ok-Yes, Cancel-No)" );
+  special = window.confirm( "Do you want special characters?\n(Ok-Yes, Cancel-No)" );
 
   // Prompt user for if they want a numbers and store it in a variable 
-  numbers = window.confirm( "Do you want numbers?\n(Ok-Yes, Cancel-No)" );
+  number = window.confirm( "Do you want numbers?\n(Ok-Yes, Cancel-No)" );
 
   // Prompt user for if they want a lowercase and store it in a variable 
-  lowercaseLetters = window.confirm( "Do you want lowercase letters?\n(Ok-Yes, Cancel-No)" );
+  lowercase = window.confirm( "Do you want lowercase letters?\n(Ok-Yes, Cancel-No)" );
 
   // Prompt user for if they want a uppercase and store it in a variable 
-  uppercaseLetters = window.confirm( "Do you want uppercase letters?\n(Ok-Yes, Cancel-No)" );
+  uppercase = window.confirm( "Do you want uppercase letters?\n(Ok-Yes, Cancel-No)" );
 
 
   //Randomly select characters 
 
 // validate that at least one character choice is true
-if (!passwordLength && !specialCharacters && !uppercaseLetters && !lowercaseLetters && !numbers ){
+if (!passwordLength && !special && !uppercase && !lowercase && !number ){
   //Alert the user they need to try again.
   return "Please select Yes to at least one of the requirements\n(Ok-Yes)";
 }
@@ -48,26 +48,30 @@ var charactersArray = [];
 
 // IF specialCharacters is true 
   // concat
-if (specialCharacters) {
+if (special) {
   charactersArray = charactersArray.concat(specialCharacters);
 }
 
-if (uppercaseLetters) {
-  charactersArray = charactersArray.concat(uppercaseLetters);
+if (uppercase) {
+  charactersArray = charactersArray.concat(uppercaseCharacters);
 }
 
-if (lowercaseLetters) {
-  charactersArray = charactersArray.concat(lowercaseLetters);
+if (lowercase) {
+  charactersArray = charactersArray.concat(lowercaseCharacters);
   
 }
 
-if (numbers) {
+if (number) {
   charactersArray = charactersArray.concat(numbers)
 }
 
  }
 }
 
+//Randomly select characters from charactersarray until you reach desired password length
+for (var i=0; charactersArray; i++ ) {
+  charactersArray += (Math.random() * data.length);
+};
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
