@@ -65,13 +65,15 @@ if (number) {
   charactersArray = charactersArray.concat(numbers)
 }
 
+//Randomly select characters from charactersarray until you reach desired password length
+for (var i=0; i<charactersArray.length; i++ ) {
+  charactersArray += Math.floor(Math.random() * data.length);
+};
+
  }
 }
 
-//Randomly select characters from charactersarray until you reach desired password length
-for (var i=0; charactersArray; i++ ) {
-  charactersArray += (Math.random() * data.length);
-};
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
