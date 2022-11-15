@@ -1,10 +1,8 @@
 # 03 JavaScript: Secret Digits
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
-
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+Through this application, the user will be able to select a 'GENERATE PASSWORD' and be prompted to enter the password length and then confirm questions such as requiring one uppercase letter, one lowercase letter, and if their will be any special characters. 
 
 ## User Story
 
@@ -38,7 +36,7 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./assets/SecretDigits.png)
 
 ## Grading Requirements
 
@@ -92,9 +90,9 @@ This Challenge is graded based on the following criteria:
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application: https://adhillon0817.github.io/Secret_Digits/ 
 
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+* The URL of the GitHub repository: https://github.com/adhillon0817/Secret_Digits.git 
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
