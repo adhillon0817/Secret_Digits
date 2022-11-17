@@ -95,4 +95,5 @@ You are required to submit the following for review:
 * The URL of the GitHub repository: https://github.com/adhillon0817/Secret_Digits.git 
 
 - - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Author
+Avleen Kaur Dhillon

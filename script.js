@@ -66,9 +66,12 @@ if (number) {
 }
 
 //Randomly select characters from charactersarray until you reach desired password length
-for (var i=0; i<charactersArray.length; i++ ) {
-  charactersArray += Math.floor(Math.random() * data.length);
+let finalPW;
+for (var i=0; i<passwordLength; i++) {
+  let randomIndex = Math.floor(Math.random() * charactersArray.length);
+  finalPW += charactersArray[randomIndex]
 };
+return finalPW;
 
  }
 }
